@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %} TEXT TO SPEECH {% endblock %}
+{% block content %}
+<style>
+form.ex1 {
+  display: block;
+  margin-top: 15em;
+
+</style>
+<div class="nav nav-tabs" id="nav-tab" role="tablist">
+	<a class="nav-item nav-link" id="home" href="/" role="tab" aria-controls="nav-home" aria-selected="false" ><h5>HOME</h5></a>
+	<a class="nav-item nav-link" id="camera" href="/camera" role="tab" aria-controls="nav-home" aria-selected="false" ><h5>VIDEO FROM CAMERA</h5></a>
+	<a class="nav-item nav-link active" id="tts" href="/text_to_speech" role="tab" aria-controls="nav-home" aria-selected="false"><h5>TEXT TO SPEECH</h5></a>
+</div>
+
+<div class="w-auto p-3">
+    <form action="" autocomplete="off" class="ex1" class="col-md-12" method="post">
+        <form>
+            <input aria-label="Vyhledávání" class="form-control mr-sm-2" name="tts" placeholder="Zpráva pro nově příchozího" type="text" type="search">
+            <button class="btn btn-outline-primary" type="submit">Odeslat</button>
+        </form>
+    </form>
+</div>
+
+{% endblock %}
