@@ -2,10 +2,11 @@ import RPi.GPIO as GPIO
 from time import sleep
 import time
 
-pin = 11
+
 
 
 def SetAngle(angle):
+    pin = 1
     GPIO.setwarnings(False)
     GPIO.setmode(GPIO.BOARD)
     GPIO.setup(pin, GPIO.OUT)
