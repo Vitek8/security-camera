@@ -1,6 +1,6 @@
 import RPi.GPIO as GPIO
 from time import sleep
-import time
+
 
 def SetAngle(angle):
     GPIO.setwarnings(False)
