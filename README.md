@@ -1,1 +1,1 @@
-Bezpečnostní kamera řízená pomocí Raspberry Pi Zero. Schopná detekovat osobu a následně nahrávat
+Bezpečnostní kamera řízená pomocí Raspberry Pi Zero. Schopná detekovat pohyb a následně nahrát.
