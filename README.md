@@ -20,13 +20,13 @@ Bezpečnostní kamera řízená pomocí Raspberry Pi Zero. Schopná detekovat po
 <a href="templates"><h3>templates</h3></a>
 
 <ol>
- <div style="color:blue;">&#x25FC;</div>obsahuje soubor <a href="templates/base.html">base.html</a>, který je šablona pro následující soubory:<br><br>
+ &#x25FC; </div>obsahuje soubor <a href="templates/base.html">base.html</a>, který je šablona pro následující soubory:<br><br>
  <ol><ol>
- <a href="templates/camera.html">&#x25BC;camera.html</a> - karta, která slouží k pohybu se servy a streamování obrazu z kamery, v budoucnu bude také možné zaznamenávat video a dělat fotky pomocí tlačítek<br><br>
+ <a href="templates/camera.html">&#x25BC; camera.html</a> - karta, která slouží k pohybu se servy a streamování obrazu z kamery, v budoucnu bude také možné zaznamenávat video a dělat fotky pomocí tlačítek<br><br>
   
- <a href="templates/index.html">&#x25BC;index.html</a> - úvodní karta, která se zobrazí po zadání IP adresy do prohlížeče<br><br>
+ <a href="templates/index.html">&#x25BC; index.html</a> - úvodní karta, která se zobrazí po zadání IP adresy do prohlížeče<br><br>
  
- <a href="templates/text_to_speech">&#x25BC;text_to_speech.html</a> - karta, která pomocí textu na mluvení dokáže komunikovat s návštěvníkem kamery, v budoucnu bych chtěl tuto kartu sloučit s kartou camera.html
+ <a href="templates/text_to_speech">&#x25BC; text_to_speech.html</a> - karta, která pomocí textu na mluvení dokáže komunikovat s návštěvníkem kamery, v budoucnu bych chtěl tuto kartu sloučit s kartou camera.html
  </ol></ol>
 </ol>
 
