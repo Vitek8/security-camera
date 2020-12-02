@@ -8,10 +8,14 @@ static - obsahuje podsložku css, která obsahuje stylování webové stránky
        - obsahuje podsložku image, která obsahuje všechny obrázky, které jsou používány na webové stránce
        - obsahuje podsložku js, která obsahuje javascripty, které slouží k interakci se stránkou a kamerou 
 
-templates - obsahuje soubor base.html, který je šablona pro následující soubory:
-          - camera.html - karta, která slouží k pohybu se servy a streamování obrazu z kamery, v budoucnu bude také možné zaznamenávat video a dělat fotky pomocí tlačítek 
-          - index.html - úvodní karta, která se zobrazí po zadání IP adresy do prohlížeče
-          - text_to_speech.html - karta, která pomocí textu na mluvení dokáže komunikovat s návštěvníkem kamery, v budoucnu bych chtěl tuto kartu sloučit s kartou camera.html
+templates 
+       - obsahuje soubor base.html, který je šablona pro následující soubory:
+       
+       - camera.html - karta, která slouží k pohybu se servy a streamování obrazu z kamery, v budoucnu bude také možné zaznamenávat video a dělat fotky pomocí tlačítek 
+          
+       - index.html - úvodní karta, která se zobrazí po zadání IP adresy do prohlížeče
+          
+       - text_to_speech.html - karta, která pomocí textu na mluvení dokáže komunikovat s návštěvníkem kamery, v budoucnu bych chtěl tuto kartu sloučit s kartou camera.html
           
 camera.py - soubor se třídou (class) na ovládní a nastavení kamery          
           
