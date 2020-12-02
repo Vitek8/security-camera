@@ -6,13 +6,15 @@ server.py - hlavní program, který běží na frameworku Flask - hostuje webovo
 
 .idea - složka, která neobsahuje nic podstatného, co by bylo spojeno s hlavním programem, je to nastavení virtuálního prostředí
 
-static - obsahuje podsložku css, která obsahuje stylování webové stránky
-       - obsahuje podsložku image, která obsahuje všechny obrázky, které jsou používány na webové stránce
-       - obsahuje podsložku js, která obsahuje javascripty, které slouží k interakci se stránkou a kamerou 
+static
+<ul> 
+       <li>obsahuje podsložku css, která obsahuje stylování webové stránky</li><br>
+       <li>obsahuje podsložku image, která obsahuje všechny obrázky, které jsou používány na webové stránce</li><br>
+       <li>obsahuje podsložku js, která obsahuje javascripty, které slouží k interakci se stránkou a kamerou</li><br> 
+</ul>
 
-
-<ul>
 templates:
+<ul>
 <li>obsahuje soubor base.html, který je šablona pro následující soubory:</li><br>
 <li>camera.html - karta, která slouží k pohybu se servy a streamování obrazu z kamery, v budoucnu bude také možné zaznamenávat video a dělat fotky pomocí tlačítek</li><br>
 <li>index.html - úvodní karta, která se zobrazí po zadání IP adresy do prohlížeče</li><br>
