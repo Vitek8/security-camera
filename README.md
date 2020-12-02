@@ -8,46 +8,46 @@ Bezpečnostní kamera řízená pomocí Raspberry Pi Zero. Schopná detekovat po
 <a href=".idea"><h3>.idea</h3></a>
 <ol>- složka, která neobsahuje nic podstatného, co by bylo spojeno s hlavním programem, je to nastavení virtuálního prostředí</ol>
 
-<h3>static</h3>
+<a href="static"><h3>static</h3></a>
 
 <ol>
-- obsahuje podsložku <a href="static/css">css<a>, která obsahuje stylování webové stránky<br>
-- obsahuje podsložku image, která obsahuje všechny obrázky, které jsou používány na webové stránce<br>
-- obsahuje podsložku js, která obsahuje javascripty, které slouží k interakci se stránkou a kamerou
+- obsahuje podsložku <a href="static/css/style.css">css</a>, která obsahuje stylování webové stránky<br>
+- obsahuje podsložku <a href="static/image">image</a>, která obsahuje všechny obrázky, které jsou používány na webové stránce<br>
+- obsahuje podsložku <a href="static/js/functions.js">js</a>, která obsahuje javascripty, které slouží k interakci se stránkou a kamerou
 </ol>
 
 
-<h3>templates</h3>
+<a href="templates"><h3>templates</h3></a>
 
 <ol>
-- obsahuje soubor base.html, který je šablona pro následující soubory:<br><br>
+ - obsahuje soubor <a href="templates/base.html">base.html</a>, který je šablona pro následující soubory:<br><br>
  <ol><ol>
-- camera.html - karta, která slouží k pohybu se servy a streamování obrazu z kamery, v budoucnu bude také možné zaznamenávat video a dělat fotky pomocí tlačítek<br><br>
-- index.html - úvodní karta, která se zobrazí po zadání IP adresy do prohlížeče<br><br>
-- text_to_speech.html - karta, která pomocí textu na mluvení dokáže komunikovat s návštěvníkem kamery, v budoucnu bych chtěl tuto kartu sloučit s kartou camera.html
+  - <a href="templates/camera.html">camera.html</a> - karta, která slouží k pohybu se servy a streamování obrazu z kamery, v budoucnu bude také možné zaznamenávat video a dělat fotky pomocí tlačítek<br><br>
+  - <a href="templates/index.html">index.html</a> - úvodní karta, která se zobrazí po zadání IP adresy do prohlížeče<br><br>
+  - <a href="templates/text_to_speech">.html">text_to_speech.html</a> - karta, která pomocí textu na mluvení dokáže komunikovat s návštěvníkem kamery, v budoucnu bych chtěl tuto kartu sloučit s kartou camera.html
  </ol></ol>
 </ol>
 
 
-<h3>camera.py</h3>
+<a href="camera.py"><h3>camera.py</h3></a>
 <ol>- soubor se třídou (class) na ovládní a nastavení kamery</ol>          
           
-<h3>data.txt</h3> 
+<a href="data.txt"><h3>data.txt</h3></a> 
 <ol>
 - soubor, do kterého se ukládají hodnoty pozic obou servo motorů a krok, o který se budou hodnoty zvyšovat
 </ol>
 
-<h3>functions.py</h3> 
+<a href="functions.py"><h3>functions.py</h3></a>
 <ol>
 - balíček všech funkcí (čtení a psaní do textových dokumentů, generování kamerového signálu, pohyb serv), použitých v hlavním programu
 </ol>
 
-<h3>servo.py</h3>
+<a href="servo.py"><h3>servo.py</h3></a>
 <ol>
 - testovací funkce na pohyb serv
 </ol>
 
-<h3>test.py</h3> 
+<a href="test.py"><h3>test.py</h3></a>
 <ol>
 - testovací soubor na pohyb serv
 </ol>
