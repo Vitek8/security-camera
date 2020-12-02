@@ -20,7 +20,7 @@ Bezpečnostní kamera řízená pomocí Raspberry Pi Zero. Schopná detekovat po
 <h3>templates</h3>
 
 <ol>
-- obsahuje soubor base.html, který je šablona pro následující soubory:<br>
+- obsahuje soubor base.html, který je šablona pro následující soubory:<br><br>
  <ol>
 - camera.html - karta, která slouží k pohybu se servy a streamování obrazu z kamery, v budoucnu bude také možné zaznamenávat video a dělat fotky pomocí tlačítek<br><br>
 - index.html - úvodní karta, která se zobrazí po zadání IP adresy do prohlížeče<br><br>
