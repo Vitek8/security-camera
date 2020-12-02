@@ -6,13 +6,13 @@ Bezpečnostní kamera řízená pomocí Raspberry Pi Zero. Schopná detekovat po
  <ol>- hlavní program, který běží na frameworku Flask - hostuje webovou aplikaci, posílá requesty na webovou stránku a zpět získává data, které používá na změnu polohy serv, co uživatel napsal a chtěl, aby bylo přehráno</ol>
 
 <h3>.idea</h3>
-<blockquote>- složka, která neobsahuje nic podstatného, co by bylo spojeno s hlavním programem, je to nastavení virtuálního prostředí</blockquote>
+<ol>- složka, která neobsahuje nic podstatného, co by bylo spojeno s hlavním programem, je to nastavení virtuálního prostředí</ol>
 
 <h3>static</h3>
 <ul> 
-       <li>obsahuje podsložku css, která obsahuje stylování webové stránky</li><br>
-       <li>obsahuje podsložku image, která obsahuje všechny obrázky, které jsou používány na webové stránce</li><br>
-       <li>obsahuje podsložku js, která obsahuje javascripty, které slouží k interakci se stránkou a kamerou</li><br>
+       obsahuje podsložku css, která obsahuje stylování webové stránky</li><br>
+       obsahuje podsložku image, která obsahuje všechny obrázky, které jsou používány na webové stránce
+       obsahuje podsložku js, která obsahuje javascripty, které slouží k interakci se stránkou a kamerou
 </ul>
 
 <h3>templates</h3>
@@ -24,16 +24,16 @@ Bezpečnostní kamera řízená pomocí Raspberry Pi Zero. Schopná detekovat po
 </ul> 
 
 <h3>camera.py</h3>
-<blockquote>- soubor se třídou (class) na ovládní a nastavení kamery</blockquote>          
+<ol>- soubor se třídou (class) na ovládní a nastavení kamery</ol>          
           
 <h3>data.txt</h3> 
-<blockquote>- soubor, do kterého se ukládají hodnoty pozic obou servo motorů a krok, o který se budou hodnoty zvyšovat</blockquote>
+<ol>- soubor, do kterého se ukládají hodnoty pozic obou servo motorů a krok, o který se budou hodnoty zvyšovat</ol>
 
 <h3>functions.py</h3> 
-<blockquote>- balíček všech funkcí (čtení a psaní do textových dokumentů, generování kamerového signálu, pohyb serv), použitých v hlavním programu</blockquote>
+<ol>- balíček všech funkcí (čtení a psaní do textových dokumentů, generování kamerového signálu, pohyb serv), použitých v hlavním programu</ol>
 
 <h3>servo.py</h3>
-<blockquote>- testovací funkce na pohyb serv</blockquote>
+<ol>- testovací funkce na pohyb serv</ol>
 
 <h3>test.py</h3> 
-<blockquote>- testovací soubor na pohyb serv</blockquote>
+<ol>- testovací soubor na pohyb serv</ol>
