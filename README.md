@@ -5,7 +5,7 @@ Bezpečnostní kamera řízená pomocí Raspberry Pi Zero. Schopná detekovat po
 <a href="server.py"><h3>server.py</h2></a>
  <ol>- hlavní program, který běží na frameworku Flask - hostuje webovou aplikaci, posílá requesty na webovou stránku a zpět získává data, které používá na změnu polohy serv; co uživatel napsal a chtěl, aby bylo přehráno</ol>
 
-<h3>.idea</h3>
+<a href="idea"><h3>.idea</h3></a>
 <ol>- složka, která neobsahuje nic podstatného, co by bylo spojeno s hlavním programem, je to nastavení virtuálního prostředí</ol>
 
 <h3>static</h3>
