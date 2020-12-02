@@ -11,7 +11,7 @@ Bezpečnostní kamera řízená pomocí Raspberry Pi Zero. Schopná detekovat po
 <h3>static</h3>
 
 <ol>
-- obsahuje podsložku css, která obsahuje stylování webové stránky</li><br>
+- obsahuje podsložku css, která obsahuje stylování webové stránky
 - obsahuje podsložku image, která obsahuje všechny obrázky, které jsou používány na webové stránce
 - obsahuje podsložku js, která obsahuje javascripty, které slouží k interakci se stránkou a kamerou
 </ol>
