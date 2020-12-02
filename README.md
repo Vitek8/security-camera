@@ -10,17 +10,17 @@ Bezpečnostní kamera řízená pomocí Raspberry Pi Zero. Schopná detekovat po
 
 <h3>static</h3>
 <ul> 
-       <blockquote><li>obsahuje podsložku css, která obsahuje stylování webové stránky</li><br>
+       <li>obsahuje podsložku css, která obsahuje stylování webové stránky</li><br>
        <li>obsahuje podsložku image, která obsahuje všechny obrázky, které jsou používány na webové stránce</li><br>
-       <li>obsahuje podsložku js, která obsahuje javascripty, které slouží k interakci se stránkou a kamerou</li><br></blockquote> 
+       <li>obsahuje podsložku js, která obsahuje javascripty, které slouží k interakci se stránkou a kamerou</li><br>
 </ul>
 
 <h3>templates</h3>
 <ul>
-<blockquote><li>obsahuje soubor base.html, který je šablona pro následující soubory:</li><br>
-<li>camera.html - karta, která slouží k pohybu se servy a streamování obrazu z kamery, v budoucnu bude také možné zaznamenávat video a dělat fotky pomocí tlačítek</li><br>
-<li>index.html - úvodní karta, která se zobrazí po zadání IP adresy do prohlížeče</li><br>
-<li>text_to_speech.html - karta, která pomocí textu na mluvení dokáže komunikovat s návštěvníkem kamery, v budoucnu bych chtěl tuto kartu sloučit s kartou camera.html</li><br></blockquote>
+       <li>obsahuje soubor base.html, který je šablona pro následující soubory:</li><br>
+       <li>camera.html - karta, která slouží k pohybu se servy a streamování obrazu z kamery, v budoucnu bude také možné zaznamenávat video a dělat fotky pomocí tlačítek</li<br>
+       <li>index.html - úvodní karta, která se zobrazí po zadání IP adresy do prohlížeče</li><br>
+       <li>text_to_speech.html - karta, která pomocí textu na mluvení dokáže komunikovat s návštěvníkem kamery, v budoucnu bych chtěl tuto kartu sloučit s kartou camera.html</li><br>
 </ul> 
 
 <h3>camera.py</h3>
