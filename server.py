@@ -1,11 +1,15 @@
 from flask import Flask, render_template, Response, redirect, url_for, request
-import socket
 import vlc
 import functions as func
-from camera import Camera
 
+id = 5000
 app = Flask(__name__)
 
+path = func.path
+
+with open("pos.txt", "w") as file:
+    file.write("0")
+    
 
 @app.route("/")
 def home():
@@ -25,18 +29,18 @@ def text_to_speech():
 @app.route("/text_to_speech/<speech>")
 def text_to_speech_redirect(speech):
     func.speech(speech)
-    player = vlc.MediaPlayer("C:/Users/vitek/OneDrive/Plocha/speech.mp3")
+    player = vlc.MediaPlayer(path)
     player.play()
     return redirect(url_for("text_to_speech"))
 
 
 @app.route("/text_to_speech/")
 def repeat():
-    player = vlc.MediaPlayer("C:/Users/vitek/OneDrive/Plocha/speech.mp3")
+    player = vlc.MediaPlayer(path)
     player.play()
     return redirect(url_for("text_to_speech"))
 
-@app.route('/camera', methods=[ "GET"])
+@app.route('/camera', methods=["POST", "GET"])
 def index():
     ser_values = func.read()
     ver = ser_values[0]
@@ -45,12 +49,10 @@ def index():
     data = {"ver": ver, "hor": hor, "step": step}
     print("vertikální osa: " + str(ver))
     print("horizontální osa: " + str(hor))
-    func.servo("hor", hor)
-    func.servo("ver", ver)
     return render_template("camera.html", data=data)
 
 
-@app.route("/camera/<data>", methods=["GET"])
+@app.route("/camera/<data>", methods=["POST", "GET"])
 def cam(data):
     func.write(data)
     return redirect(url_for("index"))
@@ -58,19 +60,11 @@ def cam(data):
 
 @app.route('/camera_streaming')
 def camera():
-    return Response(
-        func.gen(),
-        mimetype='multipart/x-mixed-replace; boundary=frame',
-    )
+    return Response(func.gen(),
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
 
-#picamera
-#@app.route('/camera_streaming')
-#def camera():
-#    return Response(func.gen_pi(Camera()),
-#        func.gen(),
-#        mimetype='multipart/x-mixed-replace; boundary=frame',
-#    )
+if __name__ == '__main__':
+    app.run(host='192.168.1.115', port=id, debug=True)
 
-if __name__ == "__main__":
-    ip = socket.gethostbyname(socket.gethostname())
-    app.run(host=ip, port=5000, debug=True)
+
+
